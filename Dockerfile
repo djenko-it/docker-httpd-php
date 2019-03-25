@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	libssl-dev ; \
 	rm -rf /var/lib/apt/lists/*
 
-#Install exet
+#Install ext
 RUN docker-php-ext-configure gd --with-jpeg-dir=/usr/include --with-png-dir=/usr/include ; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ ; \
 	docker-php-ext-configure imap --with-kerberos --with-imap-ssl ; \
